@@ -1,0 +1,3018 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="styled.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="/image/telus.jpg" />
+    <title>Teluj</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <nav
+      class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="/" class="flex items-center">
+          <img src="/image/telus.jpg" class="h-8 mr-3" alt="Telus Logo" />
+        </a>
+        <div class="flex md:order-2 items-center">
+          <a href="/#jobs">
+            <button
+              type="button"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 sm:block hidden"
+            >
+              Apply now
+            </button>
+          </a>
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+            onclick="toggleMenu()"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between w-full md:flex md:w-auto md:order-1 hidden"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="/"
+                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                aria-current="page"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="/#aboutUs"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="/#jobs"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >
+                Jobs
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero section -->
+    <section
+      class="bg-center bg-no-repeat xl:h-[650px] xl:px-[100px] bg-gray-700 bg-blend-multiply bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')]"
+    >
+      <div class="max-w-[1440px] mx-auto px-4 text-center pt-32 py-24 lg:py-56">
+        <h1
+          class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl"
+        >
+          Your Next Dream Job Awaits
+        </h1>
+        <p
+          class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48"
+        >
+          Explore thousands of job opportunities and take the next step in your
+          career.
+        </p>
+        <div
+          class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4"
+        >
+          <a
+            href="#"
+            class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+          >
+            Apply Jobs
+            <svg
+              class="w-3.5 h-3.5 ml-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </a>
+          <a
+            href="/"
+            class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
+          >
+            Learn more
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- What we do -->
+    <section class="bg-gray-100 py-12">
+      <div class="max-w-[1440px] xl:px-[100px] md:px-5 px-4 mx-auto">
+        <h2 class="font-bold mb-6">
+          <span class="text-[#008000]">What We</span> Do
+        </h2>
+        <div
+          class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5"
+          id="whatWeDoContainer"
+        >
+          <!-- JavaScript will populate content here -->
+        </div>
+      </div>
+    </section>
+    <!-- Category -->
+    <div class="max-w-[1440px] mx-auto xl:px-[100px] md:px-5 px-4 py-12">
+      <h2 class="font-bold">
+        Job <span class="text-[#008000]">Category</span>
+      </h2>
+      <div
+        class="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4 mt-6"
+        id="jobCategoryContainer"
+      >
+        <!-- JavaScript will populate content here -->
+      </div>
+    </div>
+    <!-- About us -->
+    <section class="bg-gray-100 py-12" id="aboutUs">
+      <div class="max-w-[1440px] mx-auto xl:px-[100px] md:px-5 px-4">
+        <h2 class="font-bold mb-6">
+          <span class="text-[#008000]">About</span> Us
+        </h2>
+        <div class="flex flex-col md:flex-row md:items-center">
+          <div class="md:w-1/2 md:pr-8 mb-6 md:mb-0">
+            <img
+              class="object-cover w-full h-auto rounded-lg shadow-md"
+              src="/image/about.jpg"
+              alt="About Us"
+            />
+          </div>
+          <div class="md:w-1/2">
+            <h2 class="text-3xl font-semibold mb-4">Mission and Values</h2>
+            <p class="text-gray-700 mb-4">
+              To you Warmly welcome! The Telus Agency appears to be a valuable
+              resource for individuals seeking employment opportunities. As an
+              organization focused on helping people secure their desired jobs,
+              we play a vital role in connecting job seekers with suitable
+              employers.
+            </p>
+            <p class="text-gray-700">
+              We have given various job seekers their desired jobs in the last 5
+              years. We are working successfully. We have employed over 3000.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Available jobs -->
+    <div
+      class="max-w-[1440px] lg:py-[60px] xl:px-[100px] md:px-5 px-4 mx-auto py-12"
+      id="jobs"
+    >
+      <div class="">
+        <h2 class="font-bold mb-6">
+          Available <span class="text-[#008000]">Jobs</span>
+        </h2>
+        <div
+          class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6"
+          id="availableJobsContainer"
+        >
+          <!-- JavaScript will populate content here -->
+        </div>
+      </div>
+    </div>
+    <!-- Review -->
+    <div
+      class="max-w-[1440px] xl:px-[100px] md:px-5 px-4 lg:py-[60px] py-11 mx-auto"
+      id="reviews"
+    >
+      <h2 className="font-bold mb-6">
+        <span className="text-[#008000] mb-4">Reviews</span>
+      </h2>
+      <!-- Swiper -->
+      <div class="lg:block hidden">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    I'm so grateful to the recruitment agency for connecting me
+                    with my dream remote job. They understood my skills and
+                    matched me perfectly with a company that values my
+                    contributions
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Alexander</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Web developer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The recruitment agency made my job hunt stress-free. They
+                    handled everything, from resume optimization to interview
+                    prep. Thanks to them, I'm now thriving in my remote role
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Daniel</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Digital Marketer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The agency's dedication to finding the right remote
+                    opportunity for me was impressive. They communicated every
+                    step of the way and helped me land a fantastic job
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Matteo</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Customer Service
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    I can't thank the agency enough for landing me a remote job
+                    that fits my lifestyle perfectly. Their expertise in remote
+                    placements is unmatched
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Sebastian</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Web developer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    Working with the agency was a game-changer for me. They
+                    understood my unique needs and placed me in a remote
+                    position that aligns with my career goals
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Lucas</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Web designer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The recruitment agency's personalized approach ensured that
+                    I got the remote job that matched my skills and aspirations.
+                    I highly recommend their services.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Nicolas</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Graphics Designer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    Securing a remote job through the agency was smooth and
+                    efficient. Their commitment to finding the right fit was
+                    evident from day one.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Viktor</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Designer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    I was skeptical about remote work, but the agency introduced
+                    me to a remote job that exceeded my expectations. They truly
+                    care about their clients
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Adrian</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      UI/UX Designer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The agency's support was invaluable in my remote job search.
+                    Their expertise and connections opened doors I didn't even
+                    know existed.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>David</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Web developer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    Thanks to the agency's guidance, I transitioned seamlessly
+                    into a remote role. Their dedication to helping
+                    professionals find remote opportunities is remarkable
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Leo</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Designer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    I can't express how grateful I am for the agency's
+                    assistance. They went the extra mile to match me with a
+                    remote job that aligns perfectly with my skills.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Gabriel</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Data Entry Expert
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The agency's insights into the remote job market were
+                    spot-on. They found me a remote job that allows me to excel
+                    while enjoying a flexible lifestyle
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Oliver</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Content Writer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    Finding a remote job felt daunting, but the agency's
+                    expertise changed that. They provided exceptional support
+                    throughout the process
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Maxime</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      SEO Expert
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The recruitment agency's personalized approach sets them
+                    apart. They didn't just find me a remote job; they found the
+                    perfect fit for my career
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Luca</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Designer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    Working with the agency was a game-changer. They provided
+                    valuable advice, optimized my profile, and helped me secure
+                    an amazing remote job
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Henrik</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Social media manager
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    I highly recommend the agency to anyone seeking remote work.
+                    They're attentive, professional, and truly dedicated to
+                    their clients' success
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Andreas</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Teacher
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The agency's commitment to their clients is evident in their
+                    results. They connected me with a remote job that aligns
+                    perfectly with my skills and interests
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Benjamin</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Project manager
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    Securing a remote job through the agency was a seamless
+                    process. Their support and guidance made all the difference
+                    in my career journey
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Benjamin</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Account manager
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The agency's expertise in remote placements is unmatched.
+                    They understood my career aspirations and matched me with
+                    the ideal remote opportunity.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Christian</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      HR
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    I owe my remote job success to the recruitment agency. Their
+                    dedication, expertise, and professionalism make them the
+                    go-to choice for remote job seekers.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Emil</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Project Management
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The agency's commitment to excellence is evident in every
+                    step of the process. They not only helped me secure a remote
+                    job but also provided ongoing support for a smooth
+                    transition.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Florian</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Content Writer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    Thanks to the agency's network and expertise, I found a
+                    remote job that aligns perfectly with my career goals. Their
+                    personalized approach truly sets them apart
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Hugo</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Digital Marketer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    I was struggling to find remote opportunities on my own, but
+                    the agency came to the rescue. Their dedication and insight
+                    led me to a remote job I'm truly passionate about.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Ivan</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Social media manager
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The recruitment agency's guidance turned my remote job
+                    search from daunting to exciting. Their attention to detail
+                    and genuine care for clients make them exceptional.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Jonas</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Accountant
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    I can't thank the agency enough for helping me secure a
+                    remote job that has opened up a world of possibilities.
+                    Their commitment to client success is unparalleled
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Konrad</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Graphics Designer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The agency's expertise in remote job placements transformed
+                    my career trajectory. They understood my aspirations and
+                    connected me with a remote role that exceeds expectations
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Lars</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Developer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    Finding a remote job felt like a challenge until I partnered
+                    with the agency. Their tailored approach led me to a remote
+                    position that perfectly complements my skills
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Markus</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Cyber Security Expert
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The agency's dedication to their clients' success is
+                    remarkable. They took the time to understand my strengths
+                    and placed me in a remote job where I can excel
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Nikola</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Tester
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    Working with the agency was a turning point in my job
+                    search. Their industry insights and connections paved the
+                    way for me to secure a fulfilling remote job
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Lars</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Data Entry Expert
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center lg:h-[260px] p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The agency's unwavering support and guidance were
+                    instrumental in my remote job hunt. They matched me with a
+                    role that aligns with my values and aspirations.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Pavel</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Project Management
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- Tablet View -->
+      </div>
+      <div class="lg:hidden md:block hidden">
+        <div class="swiper tabletSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    I'm so grateful to the recruitment agency for connecting me
+                    with my dream remote job. They understood my skills and
+                    matched me perfectly with a company that values my
+                    contributions
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Alexander</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Web developer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The recruitment agency made my job hunt stress-free. They
+                    handled everything, from resume optimization to interview
+                    prep. Thanks to them, I'm now thriving in my remote role
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Daniel</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Digital Marketer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The agency's dedication to finding the right remote
+                    opportunity for me was impressive. They communicated every
+                    step of the way and helped me land a fantastic job
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Matteo</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Customer Service
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    I can't thank the agency enough for landing me a remote job
+                    that fits my lifestyle perfectly. Their expertise in remote
+                    placements is unmatched
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Sebastian</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Web developer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    Working with the agency was a game-changer for me. They
+                    understood my unique needs and placed me in a remote
+                    position that aligns with my career goals
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Lucas</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Web designer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The recruitment agency's personalized approach ensured that
+                    I got the remote job that matched my skills and aspirations.
+                    I highly recommend their services.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Nicolas</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Graphics Designer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    Securing a remote job through the agency was smooth and
+                    efficient. Their commitment to finding the right fit was
+                    evident from day one.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Viktor</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Designer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    I was skeptical about remote work, but the agency introduced
+                    me to a remote job that exceeded my expectations. They truly
+                    care about their clients
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Adrian</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      UI/UX Designer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The agency's support was invaluable in my remote job search.
+                    Their expertise and connections opened doors I didn't even
+                    know existed.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>David</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Web developer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    Thanks to the agency's guidance, I transitioned seamlessly
+                    into a remote role. Their dedication to helping
+                    professionals find remote opportunities is remarkable
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Leo</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Designer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    I can't express how grateful I am for the agency's
+                    assistance. They went the extra mile to match me with a
+                    remote job that aligns perfectly with my skills.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Gabriel</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Data Entry Expert
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The agency's insights into the remote job market were
+                    spot-on. They found me a remote job that allows me to excel
+                    while enjoying a flexible lifestyle
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Oliver</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Content Writer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    Finding a remote job felt daunting, but the agency's
+                    expertise changed that. They provided exceptional support
+                    throughout the process
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Maxime</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      SEO Expert
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The recruitment agency's personalized approach sets them
+                    apart. They didn't just find me a remote job; they found the
+                    perfect fit for my career
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Luca</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Designer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    Working with the agency was a game-changer. They provided
+                    valuable advice, optimized my profile, and helped me secure
+                    an amazing remote job
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Henrik</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Social media manager
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    I highly recommend the agency to anyone seeking remote work.
+                    They're attentive, professional, and truly dedicated to
+                    their clients' success
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Andreas</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Teacher
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The agency's commitment to their clients is evident in their
+                    results. They connected me with a remote job that aligns
+                    perfectly with my skills and interests
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Benjamin</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Project manager
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    Securing a remote job through the agency was a seamless
+                    process. Their support and guidance made all the difference
+                    in my career journey
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Benjamin</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Account manager
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The agency's expertise in remote placements is unmatched.
+                    They understood my career aspirations and matched me with
+                    the ideal remote opportunity.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Christian</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      HR
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    I owe my remote job success to the recruitment agency. Their
+                    dedication, expertise, and professionalism make them the
+                    go-to choice for remote job seekers.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Emil</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Project Management
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The agency's commitment to excellence is evident in every
+                    step of the process. They not only helped me secure a remote
+                    job but also provided ongoing support for a smooth
+                    transition.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Florian</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Content Writer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    Thanks to the agency's network and expertise, I found a
+                    remote job that aligns perfectly with my career goals. Their
+                    personalized approach truly sets them apart
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Hugo</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Digital Marketer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    I was struggling to find remote opportunities on my own, but
+                    the agency came to the rescue. Their dedication and insight
+                    led me to a remote job I'm truly passionate about.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Ivan</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Social media manager
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The recruitment agency's guidance turned my remote job
+                    search from daunting to exciting. Their attention to detail
+                    and genuine care for clients make them exceptional.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Jonas</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Accountant
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    I can't thank the agency enough for helping me secure a
+                    remote job that has opened up a world of possibilities.
+                    Their commitment to client success is unparalleled
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Konrad</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Graphics Designer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The agency's expertise in remote job placements transformed
+                    my career trajectory. They understood my aspirations and
+                    connected me with a remote role that exceeds expectations
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Lars</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Developer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    Finding a remote job felt like a challenge until I partnered
+                    with the agency. Their tailored approach led me to a remote
+                    position that perfectly complements my skills
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Markus</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Cyber Security Expert
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The agency's dedication to their clients' success is
+                    remarkable. They took the time to understand my strengths
+                    and placed me in a remote job where I can excel
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Nikola</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Tester
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    Working with the agency was a turning point in my job
+                    search. Their industry insights and connections paved the
+                    way for me to secure a fulfilling remote job
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Lars</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Data Entry Expert
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center md:h-72 p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The agency's unwavering support and guidance were
+                    instrumental in my remote job hunt. They matched me with a
+                    role that aligns with my values and aspirations.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Pavel</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Project Management
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!-- Mobile Swiper -->
+      <div class="md:hidden block">
+        <div class="swiper mobileSwipter">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    I'm so grateful to the recruitment agency for connecting me
+                    with my dream remote job. They understood my skills and
+                    matched me perfectly with a company that values my
+                    contributions
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Alexander</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Web developer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The recruitment agency made my job hunt stress-free. They
+                    handled everything, from resume optimization to interview
+                    prep. Thanks to them, I'm now thriving in my remote role
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Daniel</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Digital Marketer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The agency's dedication to finding the right remote
+                    opportunity for me was impressive. They communicated every
+                    step of the way and helped me land a fantastic job
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Matteo</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Customer Service
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    I can't thank the agency enough for landing me a remote job
+                    that fits my lifestyle perfectly. Their expertise in remote
+                    placements is unmatched
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Sebastian</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Web developer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    Working with the agency was a game-changer for me. They
+                    understood my unique needs and placed me in a remote
+                    position that aligns with my career goals
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Lucas</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Web designer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The recruitment agency's personalized approach ensured that
+                    I got the remote job that matched my skills and aspirations.
+                    I highly recommend their services.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Nicolas</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Graphics Designer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    Securing a remote job through the agency was smooth and
+                    efficient. Their commitment to finding the right fit was
+                    evident from day one.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Viktor</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Designer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    I was skeptical about remote work, but the agency introduced
+                    me to a remote job that exceeded my expectations. They truly
+                    care about their clients
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Adrian</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      UI/UX Designer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The agency's support was invaluable in my remote job search.
+                    Their expertise and connections opened doors I didn't even
+                    know existed.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>David</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Web developer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    Thanks to the agency's guidance, I transitioned seamlessly
+                    into a remote role. Their dedication to helping
+                    professionals find remote opportunities is remarkable
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Leo</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Designer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    I can't express how grateful I am for the agency's
+                    assistance. They went the extra mile to match me with a
+                    remote job that aligns perfectly with my skills.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Gabriel</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Data Entry Expert
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The agency's insights into the remote job market were
+                    spot-on. They found me a remote job that allows me to excel
+                    while enjoying a flexible lifestyle
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Oliver</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Content Writer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    Finding a remote job felt daunting, but the agency's
+                    expertise changed that. They provided exceptional support
+                    throughout the process
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Maxime</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      SEO Expert
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The recruitment agency's personalized approach sets them
+                    apart. They didn't just find me a remote job; they found the
+                    perfect fit for my career
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Luca</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Designer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    Working with the agency was a game-changer. They provided
+                    valuable advice, optimized my profile, and helped me secure
+                    an amazing remote job
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Henrik</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Social media manager
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    I highly recommend the agency to anyone seeking remote work.
+                    They're attentive, professional, and truly dedicated to
+                    their clients' success
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Andreas</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Teacher
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The agency's commitment to their clients is evident in their
+                    results. They connected me with a remote job that aligns
+                    perfectly with my skills and interests
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Benjamin</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Project manager
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    Securing a remote job through the agency was a seamless
+                    process. Their support and guidance made all the difference
+                    in my career journey
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Benjamin</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Account manager
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The agency's expertise in remote placements is unmatched.
+                    They understood my career aspirations and matched me with
+                    the ideal remote opportunity.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Christian</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      HR
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    I owe my remote job success to the recruitment agency. Their
+                    dedication, expertise, and professionalism make them the
+                    go-to choice for remote job seekers.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Emil</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Project Management
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The agency's commitment to excellence is evident in every
+                    step of the process. They not only helped me secure a remote
+                    job but also provided ongoing support for a smooth
+                    transition.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Florian</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Content Writer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    Thanks to the agency's network and expertise, I found a
+                    remote job that aligns perfectly with my career goals. Their
+                    personalized approach truly sets them apart
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Hugo</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Digital Marketer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    I was struggling to find remote opportunities on my own, but
+                    the agency came to the rescue. Their dedication and insight
+                    led me to a remote job I'm truly passionate about.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Ivan</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Social media manager
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The recruitment agency's guidance turned my remote job
+                    search from daunting to exciting. Their attention to detail
+                    and genuine care for clients make them exceptional.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Jonas</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Accountant
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    I can't thank the agency enough for helping me secure a
+                    remote job that has opened up a world of possibilities.
+                    Their commitment to client success is unparalleled
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Konrad</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Graphics Designer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The agency's expertise in remote job placements transformed
+                    my career trajectory. They understood my aspirations and
+                    connected me with a remote role that exceeds expectations
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Lars</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Developer
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    Finding a remote job felt like a challenge until I partnered
+                    with the agency. Their tailored approach led me to a remote
+                    position that perfectly complements my skills
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Markus</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Cyber Security Expert
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The agency's dedication to their clients' success is
+                    remarkable. They took the time to understand my strengths
+                    and placed me in a remote job where I can excel
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Nikola</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Tester
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    Working with the agency was a turning point in my job
+                    search. Their industry insights and connections paved the
+                    way for me to secure a fulfilling remote job
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Lars</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Data Entry Expert
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure
+                class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              >
+                <blockquote
+                  class="mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+                >
+                  <p class="my-4">
+                    The agency's unwavering support and guidance were
+                    instrumental in my remote job hunt. They matched me with a
+                    role that aligns with my values and aspirations.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                    alt="profile picture"
+                  />
+                  <div
+                    class="space-y-0.5 font-medium dark:text-white text-left"
+                  >
+                    <div>Pavel</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      Project Management
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-white rounded-lg shadow dark:bg-gray-900 mt-24">
+      <div class="w-full max-w-[1440px] lg:px-[100px] md:px-5 px-4 mx-auto">
+        <div class="mx-auto p-4 px-0 md:py-8">
+          <div class="sm:flex sm:items-center sm:justify-between">
+            <a href="/" class="flex items-center mb-4 sm:mb-0">
+              <img
+                src="/image/telus.jpg"
+                class="h-8 mr-3"
+                alt="Flowbite Logo"
+              />
+            </a>
+            <ul
+              class="flex flex-wrap gap-4 items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
+            >
+              <li>
+                <a href="/#aboutUs" class="hover:underline md:mr-6"> About </a>
+              </li>
+              <li>
+                <a href="/terms.html" class="hover:underline">
+                  Terms & Condition
+                </a>
+              </li>
+              <li>
+                <a href="/privacy.html" class="hover:underline">
+                  Privacy & Policy
+                </a>
+              </li>
+            </ul>
+          </div>
+          <hr
+            class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+          />
+          <span
+            class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >
+            © 2023
+            <a href="/" class="hover:underline"> Telus </a>
+            . All Rights Reserved.
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
